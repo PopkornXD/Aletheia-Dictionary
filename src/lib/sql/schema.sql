@@ -17,11 +17,9 @@ CREATE TABLE `projects` (
 
 CREATE TABLE `page` (
   `id`         INT(11)      NOT NULL AUTO_INCREMENT,
-  `project_id` INT(11)      NOT NULL,
   `name`       VARCHAR(255) NOT NULL,
   `text`       TEXT,
-  PRIMARY KEY (`id`),
-  FOREIGN KEY (`project_id`) REFERENCES `projects` (`id`) ON DELETE CASCADE
+  PRIMARY KEY (`id`)
 );
 
 CREATE TABLE `project_pages` (

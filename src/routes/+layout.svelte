@@ -7,6 +7,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>Aletheia Dictionary</title>
 </svelte:head>
 
 
@@ -41,7 +42,7 @@
 
 <style>
 
-	:global(*) {
+	:global(*) {
 		transition: ease-in-out 0.2s;
 	}
 
@@ -50,18 +51,14 @@
 		padding: 0;
 		font-family: Arial, sans-serif;
 		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
 	}
 
 
 	:global(a) {
 		text-decoration: none;
 
-	}
-
-	:global(main) {
-		flex: 1;
 	}
 
 	header {

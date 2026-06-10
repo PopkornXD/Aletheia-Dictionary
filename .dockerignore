@@ -1,0 +1,28 @@
+# Git metadata
+.git
+.gitignore
+
+# Local development dependencies
+node_modules/
+venv/
+.venv/
+ENV/
+
+# Build artifacts & compiled code
+dist/
+build/
+out/
+*.pyc
+*.exe
+
+# Debugging and environment variables
+.env
+.env.*
+*.log
+npm-debug.log*
+
+# IDE/System configuration folders
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
