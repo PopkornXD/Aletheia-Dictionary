@@ -17,12 +17,6 @@ export async function getPool() {
 			queueLimit: 0
 		};
 
-		console.log('Database config:', {
-			host: config.host,
-			user: config.user,
-			database: config.database
-		});
-
 		pool = mysql.createPool(config);
 	}
 	return pool;

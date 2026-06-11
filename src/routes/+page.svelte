@@ -21,7 +21,7 @@
             {`You have ${data.projects.length} project${data.projects.length === 1 ? '' : 's'}.`}
         </p>
         </div>
-        <button class="btn-primary" onclick={() => showNewProjectModal = true}>
+        <button class="btn-primary" onclick={() => !showNewProjectModal ? showNewProjectModal = true : showNewProjectModal = false}>
         <span class="plus">+</span> New project
         </button>
     </div>

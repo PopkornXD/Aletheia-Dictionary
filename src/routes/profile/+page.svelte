@@ -16,6 +16,7 @@
 	{/if}
 </div>
 
+
 <style>
 	.profile-container {
 		display: flex;

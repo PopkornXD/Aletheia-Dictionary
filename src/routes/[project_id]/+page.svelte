@@ -196,6 +196,7 @@
 
    <div class="pages_div">
         {#each [0, 1, 2] as slot_index}
+        
             {#if link_panel[slot_index]}
                 {@const panel = link_panel[slot_index]}
                 {@const origin = data.pages.find(p => p.id == panel.for_page_id)}
@@ -227,10 +228,12 @@
                         </div>
                     {/if}
                 </div>
+
+            
             {:else if slots[slot_index] != null && data.pages.find(p => p.id == slots[slot_index])}
                 {@const page = data.pages.find(p => p.id == slots[slot_index])}
                 <div class="page">
-                    <button
+                    <!-- <button
                         class="nav_arrow left_arrow"
                         title="Pages that link to this page"
                         onclick={() => openBacklinkPanel(slot_index)}
@@ -239,7 +242,7 @@
                         class="nav_arrow right_arrow"
                         title="Sources of this page"
                         onclick={() => openSourcePanel(slot_index)}
-                    >{`>`}</button>
+                    >{`>`}</button> -->
 
                     {#if editing[page.id]}
                         <form
