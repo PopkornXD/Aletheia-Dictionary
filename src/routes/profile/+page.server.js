@@ -1,6 +1,6 @@
 import { redirect } from '@sveltejs/kit';
 
-export function load({ locals }) {
+export async function load({ locals }) {
 	if (!locals.user) {
 		throw redirect(302, '/login');
 	}
@@ -19,3 +19,6 @@ export function load({ locals }) {
 		projects: projects
 	};
 }
+
+
+
